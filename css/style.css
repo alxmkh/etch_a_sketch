@@ -1,0 +1,28 @@
+#header {
+    font-family: 'Libre Barcode 39 Text', cursive;
+}
+.myRow {
+
+    border: 0px black;
+    background: white;
+    
+}
+
+.myCell {
+    border: 0.5px solid black;
+    background: white;
+}
+#gridSpace {
+    width: 460px;
+    height: 460px;
+    border: 0px black;
+    background: white;
+    display: flex;
+     
+}
+#sign{
+    padding-bottom: 1px;
+}
+.container2 {
+    padding: 0 15px;
+}

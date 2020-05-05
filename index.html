@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8">
+    <!-- Настройка viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Подключаем Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Контент страницы -->
+    <div class="container">
+        <div class="row justify-content-md-center h1 pt-2 display-2" id="header">
+            Etch-a-Sketch
+        </div>
+
+        <div class="row justify-content-md-center h1 pt-2 display-2" id="inputSpace">
+            <input type="number" class="form-control w-25" placeholder="Specify size between 1 and 100"
+                aria-label="Example text with button addon" aria-describedby="button-addon1" min="1" max="50" id="inputSize">
+        </div>
+        <div class="row justify-content-md-center h1 pt-2 display-2" id="buttonsSpace">
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary mr-5" type="button" id="colorButton">Color</button>
+                <button class="btn btn-outline-secondary" type="button" id="submitButton">Draw</button>
+                <button class="btn btn-outline-secondary ml-5   " type="button" id="grayButton">Gray</button>
+            </div>
+        </div>
+        <div class="row justify-content-md-center pt-2">
+            <div id="gridSpace" hidden>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Подключаем jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Подключаем плагин Popper (необходим для работы компонента Dropdown и др.) -->
+    <script src="js/popper.min.js"></script>
+    <!-- Подключаем Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script>
+        $(function() {
+          $('#toggle-two').bootstrapToggle({
+            on: 'Color',
+            off: 'Gray'
+          });
+        })
+      </script>
+</body>
+
+</html>
